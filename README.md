@@ -1,10 +1,4 @@
-# Simple WMS leaflet
-Leaflet - Simple WMS Example
+# Simple TMS leaflet
+Leaflet - Simple TMS Example
 
-Tests with Time Dimension.
-Putting a temporal slider to control display layers with temporal dimension.
-
-# Thanks to:
-
-Jquery Loading: http://carlosbonetti.github.io/jquery-loading
-SOCIB public code: https://github.com/socib/Leaflet.TimeDimension
+Tests with Planet tiles using api_key=afdb1e8a9c8142739553e3942283d6c8 from https://www.globalforestwatch.org/.

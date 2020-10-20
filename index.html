@@ -3,25 +3,17 @@
 <head>
 <meta charset="utf-8">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" rel="stylesheet"/>
 <link href="css/about.css" rel="stylesheet"/>
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css" rel="stylesheet"/>
-<link href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css" rel="stylesheet" />
 <style>
-.onOffTimers{
-  position: fixed;
-    top: 10px;
-    left: 10px;
-}
-.time-hidden{
-  display: none;
-}
-.time-show{
-  display: inline;
-}
-</style>
+  .changeMonth{
+    position: fixed;
+      top: 10px;
+      left: 10px;
+  }
+  </style>
 
-<title>Teste Leaflet - TimeDimension</title>
+<title>Teste Leaflet - TMS</title>
 </head>
 
 <body>
@@ -37,21 +29,21 @@
     </div>
   </section>
 
-  <div class="onOffTimers">
-    <button type="button" class="btn btn-default time-hidden" id="btn_time_prodes_cerrado_2000_2018_uf_mun" onclick="onOffTimeDimension('prodes_cerrado_2000_2018_uf_mun')">Deforestation</button>
-    <button type="button" class="btn btn-default time-hidden" id="btn_time_temporal_mosaic" onclick="onOffTimeDimension('temporal_mosaic')">Mosaic</button>
-  </div>
-
-  <div id="custom-overlay">
-    <div class="terrabrasilis-loading"></div>
+  <div class="changeMonth">
+    <select name="mm-yyyy" onchange="changeMonth(this)">
+      <option value="01-2020">jan/2020</option>
+      <option value="02-2020">fev/2020</option>
+      <option value="03-2020">mar/2020</option>
+      <option value="04-2020">abr/2020</option>
+      <option value="05-2020">mai/2020</option>
+      <option value="06-2020">jun/2020</option>
+      <option value="07-2020">jul/2020</option>
+      <option value="08-2020">ago/2020</option>
+    </select>
   </div>
   
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js"></script>
-  <script type="text/javascript" src="https://cdn.rawgit.com/nezasa/iso8601-js-period/master/iso8601.js"></script>
-  <!-- https://github.com/socib/Leaflet.TimeDimension -->
-  <script type="text/javascript" src="js/leaflet.timedimension.src.js"></script>
-  <script src="js/jquery.loading.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js"></script>
   <script src="js/map.js"></script>
 	</body>
 </html>
