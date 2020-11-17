@@ -54,10 +54,11 @@ function changeMonth(ev) {
 
 function reloadMap(selectLayer){
     if(tms_example) tms_example.removeFrom(map);
-    let url="https://tiles.planet.com/basemaps/v1/planet-tiles/"+selectLayer+"/gmap/{z}/{x}/{y}.png?api_key="+api_key;
+    let url="https://tiles{s}.planet.com/basemaps/v1/planet-tiles/"+selectLayer+"/gmap/{z}/{x}/{y}.png?api_key="+api_key;
 
     tms_example = L.tileLayer(url, {
-        tms: false
+        tms: false,
+        subdomains:'0123'
     }).addTo(map);
 };
 
