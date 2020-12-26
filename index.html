@@ -5,8 +5,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"/>
 <link href="css/about.css" rel="stylesheet"/>
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css" rel="stylesheet"/>
-<link href="https://cdn.rawgit.com/socib/Leaflet.TimeDimension/master/dist/leaflet.timedimension.control.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.css" rel="stylesheet"/>
 <style>
 .onOffTimers{
   position: fixed;
@@ -25,33 +24,21 @@
 </head>
 
 <body>
-  
+  <select id="zlevels" onchange="setZoomLevel(this.selectedIndex)">
+  </select>
 	<!-- Download -->
   <section id="download" class="pb-5">
     <div class="container">
       <div class="card">
         <div class="card-body">          
-            <div id="map" style="width: 100%; height: 780px;"></div>
+            <div id="map" style="width: 100%; height: 550px;"></div>
         </div>        
       </div>
     </div>
   </section>
-
-  <div class="onOffTimers">
-    <button type="button" class="btn btn-default time-hidden" id="btn_time_prodes_cerrado_2000_2018_uf_mun" onclick="onOffTimeDimension('prodes_cerrado_2000_2018_uf_mun')">Deforestation</button>
-    <button type="button" class="btn btn-default time-hidden" id="btn_time_temporal_mosaic" onclick="onOffTimeDimension('temporal_mosaic')">Mosaic</button>
-  </div>
-
-  <div id="custom-overlay">
-    <div class="terrabrasilis-loading"></div>
-  </div>
   
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js"></script>
-  <script type="text/javascript" src="https://cdn.rawgit.com/nezasa/iso8601-js-period/master/iso8601.js"></script>
-  <!-- https://github.com/socib/Leaflet.TimeDimension -->
-  <script type="text/javascript" src="js/leaflet.timedimension.src.js"></script>
-  <script src="js/jquery.loading.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.js"></script>
   <script src="js/map.js"></script>
 	</body>
 </html>
