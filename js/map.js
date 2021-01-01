@@ -2,7 +2,7 @@ var map;
 var tms_example;
 var latitude = -55.685277;
 var longitude = -10.3;
-var api_key = "afdb1e8a9c8142739553e3942283d6c8";
+var api_key = "12b17c3548c047218485084e2f8c8048";
 
 $( document ).ready(function() {
     loadMosaicsFromApi();
