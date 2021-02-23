@@ -9,4 +9,4 @@ About API access:
 
  > https://developers.planet.com/docs/basemaps/tile-services/#tile-service-urls
 
-Tests with Planet tiles using api_key=afdb1e8a9c8142739553e3942283d6c8 from https://www.globalforestwatch.org/.
+Tests with Planet tiles using api_key=12b17c3548c047218485084e2f8c8048 from https://www.globalforestwatch.org/.
